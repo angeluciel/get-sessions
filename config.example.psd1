@@ -1,12 +1,15 @@
 @{
-    # Empty dates select the previous calendar month in the script host's timezone.
+    VeeamBaseUrl = 'http://localhost:9419'
+    # aaaa-mm-dd
     ReportStartDate = '2026-08-01'
-    ReportEndDate = '2026-08-31'
-
-    # To override the period, set BOTH dates. EndDate includes the entire day.
-    # ReportStartDate = '2026-08-01'
-    # ReportEndDate = '2026-08-31'
-
-    # Relative to the repository root.
+    ReportEndDate = '2026-09-01'
+    # relativo à raiz do repositório
     ReportOutputDirectory = 'reports'
+    
+    ApiVersion = '1.3-rev2'
+    PathToCredential = 'C:\credential.xml'
+
+    LogDirectory = 'logs'
+    LogRetentionDays = 7
+    LogLevel = 'INFO'
 }

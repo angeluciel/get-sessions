@@ -112,7 +112,7 @@ function Main {
 
         try {
             $csv  = ConvertTo-SessionCsv -Report $body -Delimiter ';' |
-                Set-Content -Path '.\reports\beautified.csv' -Encoding utf8
+                Set-Content -Path "$PSScriptRoot\..\reports\beautified.csv" -Encoding utf8
             $json = ConvertTo-Json -InputObject $body -Depth 100 -WarningAction Stop
             Set-Content -LiteralPath $temporaryPath -Value $json -Encoding utf8
             Move-Item -LiteralPath $temporaryPath -Destination $outputPath -Force

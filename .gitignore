@@ -1,0 +1,8 @@
+config.psd1
+
+reports/
+logs/
+*.log
+
+.credential.xml
+.clixml
