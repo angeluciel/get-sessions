@@ -1,5 +1,5 @@
 @{
-    VeeamBaseUrl = 'http://localhost:9419'
+    VeeamBaseUrl = 'https://localhost:9419'
     # aaaa-mm-dd
     ReportStartDate = '2026-08-01'
     ReportEndDate = '2026-09-01'
